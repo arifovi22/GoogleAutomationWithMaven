@@ -1,0 +1,178 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-02-05T23:25:23.422Z",
+        "line": 4,
+        "name": "I am connecting with database",
+        "description": "",
+        "id": "database-connection;i-am-connecting-with-database",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1677383200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am connect with MySql",
+            "match": {
+              "location": "DatabaseConnection.i_am_connect_with_MySql()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 45870800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I check data with database",
+            "match": {
+              "location": "DatabaseConnection.i_check_data_with_database()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test1"
+          }
+        ]
+      }
+    ],
+    "name": "Database Connection",
+    "description": "",
+    "id": "database-connection",
+    "keyword": "Feature",
+    "uri": "file:Cucumber/DatabaseConnection.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "I am in Google",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13532501100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am in google home page and click search",
+            "match": {
+              "location": "CucumberSteps.i_am_in_google_home_page_and_click_search()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-05T23:25:23.422Z",
+        "line": 7,
+        "name": "I am searching",
+        "description": "",
+        "id": "google;i-am-searching",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3334364000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I write \"fountain pen\" click search and landing on specific search result",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fountain pen\"",
+                  "offset": 8
+                }
+              ],
+              "location": "CucumberSteps.i_write_search_option_and_click_search(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ch3 class\u003d\"LC20lb\"\u003e...\u003c/h3\u003e is not clickable at point (274, 14). Other element would receive the click: \u003cinput class\u003d\"gLFyf gsfi\" maxlength\u003d\"2048\" name\u003d\"q\" type\u003d\"text\" jsaction\u003d\"paste:puy29d\" aria-autocomplete\u003d\"both\" aria-haspopup\u003d\"false\" autocapitalize\u003d\"off\" autocomplete\u003d\"off\" autocorrect\u003d\"off\" role\u003d\"combobox\" spellcheck\u003d\"false\" title\u003d\"Search\" value\u003d\"fountain pen\" aria-label\u003d\"Search\" data-ved\u003d\"0ahUKEwiniYHKx7vnAhWMY98KHRvsBI8Q39UDCAk\"\u003e\n  (Session info: chrome\u003d79.0.3945.130)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JQ0LRFT\u0027, ip: \u002710.11.12.230\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\\Users\\Arif\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50786}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: d58f6823f0fbf95843924c25932c86b5\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat googleAutomationPages.MasterPage.click(MasterPage.java:28)\r\n\tat googleAutomationPages.GooglePage.selectSearchItem(GooglePage.java:40)\r\n\tat cucumberStepsDefination.CucumberSteps.from_the_search_result_I_select_a_result(CucumberSteps.java:32)\r\n\tat ✽.From the search result I select a result(file:Cucumber/homePage.feature:9)\r\n",
+              "duration": 3223827000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "From the search result I select a result",
+            "match": {
+              "location": "CucumberSteps.from_the_search_result_I_select_a_result()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "I am in Google",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12709277400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am in google home page and click search",
+            "match": {
+              "location": "CucumberSteps.i_am_in_google_home_page_and_click_search()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-05T23:25:23.422Z",
+        "line": 11,
+        "name": "I am validate homepage",
+        "description": "",
+        "id": "google;i-am-validate-homepage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027About\u0027]\"}\n  (Session info: chrome\u003d79.0.3945.130)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JQ0LRFT\u0027, ip: \u002710.11.12.230\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\\Users\\Arif\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50786}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: d58f6823f0fbf95843924c25932c86b5\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027About\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat googleAutomationPages.MasterPage.getTxt(MasterPage.java:49)\r\n\tat googleAutomationPages.GooglePage.getTextAbout(GooglePage.java:49)\r\n\tat cucumberStepsDefination.CucumberSteps.i_see_in_the_top(CucumberSteps.java:42)\r\n\tat ✽.I see \"About\" in the top(file:Cucumber/homePage.feature:12)\r\n",
+              "duration": 4197684000,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "I see \"About\" in the top",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"About\"",
+                  "offset": 6
+                }
+              ],
+              "location": "CucumberSteps.i_see_in_the_top(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google",
+    "description": "",
+    "id": "google",
+    "keyword": "Feature",
+    "uri": "file:Cucumber/homePage.feature",
+    "tags": []
+  }
+]
